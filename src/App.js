@@ -6,6 +6,9 @@ import { Route, Routes } from 'react-router-dom';
 import Login from './Pages/Login/Login/Login';
 import CarDetails from './Pages/CarDetails/CarDetails';
 import CarAddForm from './Pages/CarAddForm/CarAddForm';
+import SignUp from './Pages/Login/SignUp/SignUp';
+import Blog from './Pages/Blog/Blog';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -14,8 +17,11 @@ function App() {
      <Routes>
        <Route path='/' element={<Home></Home>}></Route>
        <Route path='/login' element={<Login/>}></Route>
+       <Route path='/signup' element={<SignUp/>}></Route>
        <Route path='/carDetails/:id' element={<CarDetails/>}></Route>
        <Route path='/caraddform' element={<CarAddForm/>}></Route>
+       <Route path='/blog' element={<Blog></Blog>}></Route>
+       <Route path='*' element={<NotFound></NotFound>}></Route>
 
      </Routes>
         
