@@ -1,9 +1,69 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
     return (
         <div>
-            <h2>SignUp</h2>
+           <body class="text-center">
+        <main class="form-signin">
+          <form>
+            {/*  <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+             */}
+            <h1 class="h3 mb-3 fw-normal">Sign Up </h1>
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Confirm Password</label>
+            </div>
+
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me" /> Remember me
+              </label>
+              <label>
+                <ul>
+                  <a className="text-danger" as={Link} to="/">
+                    Forgate passWord
+                  </a>
+                </ul>
+              </label>
+            </div>
+            <div>
+              <ul>
+                <p className="text-danger" as={Link} to="/signup">
+                  Alredy have a account 
+                </p>
+              </ul>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">
+              Sign in
+            </button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+          </form>
+        </main>
+      </body>
         </div>
     );
 };
