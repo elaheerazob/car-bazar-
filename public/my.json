@@ -1,0 +1,69 @@
+[
+    {
+        "id": "1",
+        "name": "Mazda 6 2020",
+        "price": 420,
+        "stock": 20,
+        "description": "Mazda 6 2020 Price in Bangladesh September 15, 2020 Posted by: BDCarShop.com No Comments Mazda 6 2020 The 2020 Mazda 6 ranks near the top of the midsize car class, largely on the strength of its spirited performance and premium cabin. Rankings & Research The 2020 Mazda Mazda6's #4 ranking is based on its score",
+        "ratingsCount": 3725,
+        "img": "https://i.ibb.co/b1Gcg8f/1.jpg",
+        "shipping": 1,
+        "quantity": 2
+      },
+      {
+        "id": "2",
+        "name": "Nissan Rogue 2020",
+        "price": 196,
+        "stock": 19,
+        "description": "Nissan Rogue 2020 price in Bangladesh September 13, 2020 Posted by: BDCarShop.com No Comments Nissan Rogue 2020 The 2020 Nissan Rogue places within the top half our compact SUV rankings. It boasts an honest predicted reliability rating, a generous list of ordinary safety features, and many of space, but its underpowered engine keeps it from",
+        "ratingsCount": 4355,
+        "img": "https://i.ibb.co/XYXY5dM/3.jpg",
+        "shipping": 14,
+        "quantity": 9
+      },
+      {
+        "id": "3",
+        "name": "Audi r8 2020",
+        "seller": "Addidas",
+        "price": 245,
+        "stock": 20,
+        "description": "Audi r8 2020 price in Bangladesh September 7, 2020 Posted by: BDCarShop.com No Comments Audi r8 2020 The 2020 Audi R8 finishes within the top third of our luxury sports car rankings. Its naturally aspirated engines deliver exceptional power, and therefore the interior lives up to Audi’s reputation for opulence and refinement. However, the R8",
+        "ratingsCount": 3972,
+        "img": "https://i.ibb.co/MPHD5vQ/4.jpg",
+        "shipping": 1,
+        "quantity": 4
+      },
+      {
+        "id": "4",
+        "name": "Volvo xc90 2019",
+        "price": 229,
+        "stock": 10,
+        "description": "Volvo xc90 2019 price in Bangladesh September 1, 2020 Posted by: BDCarShop.com No Comments Toyota Corolla 2020 The 2019 Volvo XC90 offers a superb safety score, many standard features, an airy and stylish interior, and great fuel economy. However, it ranks toward the rear of the posh midsize SUV class due to its hit-or-miss ride",
+        "ratingsCount": 1764,
+        "img": "https://i.ibb.co/qNVFXnk/5.jpg",
+        "shipping": 32,
+        "quantity": 7
+      },
+      {
+        "id": "5",
+        "name": "Volvo xc60",
+        "price": 287,
+        "stock": 11,
+        "description": "Volvo xc60 2019 price in Bangladesh September 1, 2020 Posted by: BDCarShop.com No Comments Volvo xc60 2019 The 2019 Volvo XC60 finishes within the middle of our luxury compact SUV rankings. it's a five-star interior and many tech features, but it is not quite as fun to drive as many competitors, and a few rivals",
+        "ratingsCount": 799,
+        "img": "https://i.ibb.co/7KhfGx1/6.jpg",
+        "shipping": 49,
+        "quantity": 5
+      },
+      {
+        "id": "6",
+        "name": "Toyota rav4 2019",
+        "price": 138,
+        "stock": 19,
+        "description": "Toyota rav4 2019 price in Bangladesh September 1, 2020 Posted by: BDCarShop.com No Comments Toyota rav4 The 2019 Toyota RAV4 ranks within the top half of the compact SUV class. It gets great fuel economy estimates, feels stable around corners, and offers a top-quality cabin with ample space. However, it's a loud engine that lacks",
+        "ratingsCount": 4372,
+        "img": "https://i.ibb.co/QX9Hpfz/7.jpg",
+        "shipping": 19,
+        "quantity": 3
+      }
+]
