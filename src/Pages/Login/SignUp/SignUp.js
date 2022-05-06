@@ -96,16 +96,6 @@ const SignUp = () => {
               />
               <label for="floatingPassword">Confirm Password</label>
             </div>
-
-            <div className="checkbox mb-3">
-              <label>
-                <ul>
-                  <a className="text-primary text-decoration-none" as={Link} to="/">
-                    Forgate password
-                  </a>
-                </ul>
-              </label>
-            </div>
             <div>
               <ul>
                 <p>Alredy have a account <Link to='/login' className="text-primary text-decoration-none">Login</Link></p>
@@ -114,7 +104,6 @@ const SignUp = () => {
             <button className="w-100 btn btn-lg btn-primary" type="submit">
               Sign in
             </button>
-            <p className="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
           </form>
           <p style={{color: 'red'}}>{error}</p>
         </div>

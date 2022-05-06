@@ -4,7 +4,7 @@ import Car from '../Car/Car';
 const Cars = () => {
     const [cars,setCars] =useState([]);
     useEffect( () =>{
-        fetch('my.json')
+        fetch('http://localhost:5000/cars')
         .then(res =>res.json())
         .then(data =>setCars(data))
     },[])
@@ -13,7 +13,7 @@ const Cars = () => {
             <h2>Cars</h2>
         <div className=' row w-100'>
             {
-                cars.map(car => <Car key={car.id} car={car}></Car>)
+                cars.map(car => <Car key={car._id} car={car}></Car>)
             }
         </div>
         
