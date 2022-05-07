@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useCarDetails from "../../Hooks/useCarDetails";
 
 const CarDetails = () => {
@@ -9,15 +9,17 @@ const CarDetails = () => {
 
   return (
     <div>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+      <Card className="m-auto mt-4" style={{ width: "25rem" } } >
+        <Card.Img variant="top" src={car.img} />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
+          <h2>{car.name}</h2>
+          <h3>Price: ${car.price}</h3>
+          <h5>Stock:{car.quantity}</h5>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          {car.description}
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary">Delivered</Button>
+          <Link to={`/updateCar/${car._id}`}><Button variant="primary">Add Stock</Button></Link>
         </Card.Body>
       </Card>
     </div>
