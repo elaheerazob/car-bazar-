@@ -17,11 +17,7 @@ const Header = () => {
           <Navbar.Brand as={Link} to={'/'}>React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-            <Nav>
+            <Nav className="ms-auto">
               <Nav.Link as={Link} to='/caraddform'>Car Add</Nav.Link>
               <Nav.Link as={Link} to='/manageitem'>Manage Item</Nav.Link>
               <Nav.Link as={Link} to='/blog'>Blog</Nav.Link>
