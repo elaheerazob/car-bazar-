@@ -11,6 +11,7 @@ import Blog from './Pages/Blog/Blog';
 import NotFound from './Pages/NotFound/NotFound';
 import RequireAuth from './Share/RequireAuth/RequireAuth';
 import UpdateCar from './Pages/Home/UpdateCar/UpdateCar';
+import ManageItem from './Pages/ManageItem/ManageItem';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
        <Route path='/updateCar/:updateCarid' element={<UpdateCar/>}></Route>
        <Route path='/caraddform' element={<RequireAuth>
        {<CarAddForm/>}
+       </RequireAuth>}></Route>
+       <Route path='/manageitem' element={<RequireAuth>
+       {<ManageItem/>}
        </RequireAuth>}></Route>
        <Route path='/blog' element={<Blog></Blog>}></Route>
        <Route path='*' element={<NotFound></NotFound>}></Route>
