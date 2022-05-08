@@ -17,7 +17,7 @@ const CarAddForm = () => {
       const email = event.target.email.value;
   
       // console.log(name, image, price, quantity, description, supplier);
-      const url = `http://localhost:5000/cars`;
+      const url = `https://pure-eyrie-56376.herokuapp.com/cars`;
       fetch(url, {
         method: "POST",
         body: JSON.stringify({

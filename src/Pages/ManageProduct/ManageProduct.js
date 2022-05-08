@@ -7,7 +7,7 @@ import './ManageProduct.css';
 const ManageProduct = (props) =>  {
   const [car, setCar] = useCarDetails();
   useEffect(() => {
-    fetch(`http://localhost:5000/cars`)
+    fetch(`https://pure-eyrie-56376.herokuapp.com/cars`)
       .then((res) => res.json())
       .then((data) => setCar(data));
   }, []);
@@ -18,7 +18,7 @@ const ManageProduct = (props) =>  {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are You Sure Delete?");
     if (proceed) {
-      const url = `http://localhost:5000/cars/${id}`;
+      const url = `https://pure-eyrie-56376.herokuapp.com/cars/${id}`;
       fetch(url, {
         method: "DELETE",
       })

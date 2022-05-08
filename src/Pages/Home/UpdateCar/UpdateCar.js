@@ -7,7 +7,7 @@ const UpdateCar = () => {
     const navigate = useNavigate();
     const [car,setCar] = useState({});
     useEffect(() =>{
-        const url =`http://localhost:5000/cars/${updateCarid}`;
+        const url =`https://pure-eyrie-56376.herokuapp.com/cars/${updateCarid}`;
         fetch(url)
         .then(res =>res.json())
         .then(data =>setCar(data))
@@ -16,7 +16,7 @@ const UpdateCar = () => {
     const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     fetch(
-      `http://localhost:5000/cars/${updateCarid}?oldQuantity=${car.quantity}`,
+      `https://pure-eyrie-56376.herokuapp.com/cars/${updateCarid}?oldQuantity=${car.quantity}`,
       {
         method: "put",
         headers: {
@@ -37,7 +37,7 @@ const UpdateCar = () => {
 
   const decriseOne = () => {
     fetch(
-      `http://localhost:5000/cars/${updateCarid}?oldQuantity=${car.quantity}`,
+      `https://pure-eyrie-56376.herokuapp.com/cars/${updateCarid}?oldQuantity=${car.quantity}`,
       {
         method: "put",
         headers: {
