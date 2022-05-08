@@ -10,7 +10,7 @@ const Cars = () => {
     },[])
     return (
         <div>
-            <h2>Cars</h2>
+            <h1 className='text-center my-4'>Cars</h1>
         <div className=' row w-100'>
             {
                 cars.map(car => <Car key={car._id} car={car}></Car>)
