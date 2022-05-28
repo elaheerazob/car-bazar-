@@ -4,7 +4,7 @@ import useItem from "../../../hook/useItem";
 const AllMyItemShow = ({product}) => {
   const [products, setProducts] = useItem();
   /* useEffect(() => {
-    fetch(`http://localhost:5000/product`)
+    fetch(`https://pure-eyrie-56376.herokuapp.com/product`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []); */
@@ -15,7 +15,7 @@ const AllMyItemShow = ({product}) => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are You Sure Delete?");
     if (proceed) {
-      const url = `http://localhost:5000/cars/${id}`;
+      const url = `https://pure-eyrie-56376.herokuapp.com/cars/${id}`;
       fetch(url, {
         method: "DELETE",
       })

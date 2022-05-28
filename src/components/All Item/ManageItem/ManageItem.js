@@ -10,7 +10,7 @@ const ManageItem = () => {
   const nagtive = useNavigate();
   const [singleProduct, setSingelProduct] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/data/${id}`)
+    fetch(`https://pure-eyrie-56376.herokuapp.com/data/${id}`)
       .then((res) => res.json())
       .then((data) => setSingelProduct(data));
   }, [reload]);
@@ -20,7 +20,7 @@ const ManageItem = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     fetch(
-      `http://localhost:5000/data/${id}?oldQuantity=${singleProduct.quantity}`,
+      `https://pure-eyrie-56376.herokuapp.com/data/${id}?oldQuantity=${singleProduct.quantity}`,
       {
         method: "put",
         headers: {
@@ -40,7 +40,7 @@ const ManageItem = () => {
 
   const decriseOne = () => {
     fetch(
-      `http://localhost:5000/datas/${id}?oldQuantity=${singleProduct.quantity}`,
+      `https://pure-eyrie-56376.herokuapp.com/datas/${id}?oldQuantity=${singleProduct.quantity}`,
       {
         method: "put",
         headers: {
