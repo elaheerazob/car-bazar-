@@ -1,41 +1,54 @@
-import './App.css';
-import Header from '../src/Share/Header/Header';
-import Footer from '../src/Share/Footer/Footer';
-import Home from '../src/Pages/Home/Home'
-import { Route, Routes } from 'react-router-dom';
-import Login from './Pages/Login/Login/Login';
-import CarDetails from './Pages/CarDetails/CarDetails';
-import CarAddForm from './Pages/CarAddForm/CarAddForm';
-import SignUp from './Pages/Login/SignUp/SignUp';
-import Blog from './Pages/Blog/Blog';
-import NotFound from './Pages/NotFound/NotFound';
-import RequireAuth from './Share/RequireAuth/RequireAuth';
-import UpdateCar from './Pages/Home/UpdateCar/UpdateCar';
-import ManageItem from './Pages/ManageItem/ManageItem';
-
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Share/Header/Header";
+import Home from "./components/Home/Home/Home";
+import NotFound from "./components/Share/NotFound/NotFound";
+import Login from "./components/Login/Login/Login";
+import Blog from "./components/Home/Blog/Blog";
+import About from "./components/Home/About/About";
+import Footer from "./components/Share/Footer/Footer";
+import SingUp from "./components/Login/SingUp/SingUp";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import AddItem from "./components/All Item/AddItem/AddItem";
+import MyItemAll from "./components/All Item/MyItemAll/MyItemAll";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ManageItem from "./components/All Item/ManageItem/ManageItem";
+import RequireAuth from "./components/Login/RequireAuth/RequireAuth";
+import MyAddItem from "./components/All Item/MyAddItem/MyAddItem";
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <Header></Header>
-     <Routes>
-       <Route path='/' element={<Home></Home>}></Route>
-       <Route path='/login' element={<Login/>}></Route>
-       <Route path='/signup' element={<SignUp/>}></Route>
-       <Route path='/cars/:carId' element={<CarDetails/>}></Route>
-       <Route path='/updateCar/:updateCarid' element={<UpdateCar/>}></Route>
-       <Route path='/caraddform' element={<RequireAuth>
-       {<CarAddForm/>}
-       </RequireAuth>}></Route>
-       <Route path='/manageitem' element={<RequireAuth>
-       {<ManageItem/>}
-       </RequireAuth>}></Route>
-       <Route path='/blog' element={<Blog></Blog>}></Route>
-       <Route path='*' element={<NotFound></NotFound>}></Route>
-
-     </Routes>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/singUp" element={<SingUp></SingUp>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
         
-     
+        <Route path="/addItem" element={<AddItem></AddItem>}></Route>
+        <Route path="/myItem" element={<MyAddItem></MyAddItem>}></Route>
+        <Route path="/allItems" element={<MyItemAll></MyItemAll>}></Route>
+        <Route
+          path="/manageitem/:id"
+          element={
+            <RequireAuth>
+              <ManageItem></ManageItem>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
+      </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
